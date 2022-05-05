@@ -1,0 +1,50 @@
+.newuser {
+  flex: 4;
+}
+.newuser-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.newuser-item {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.newuser-item > label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a5a5a5;
+}
+.newuser-item > input {
+  height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.newuser-gender > input {
+  margin-top: 20px;
+}
+.newuser-gender > label {
+  margin: 10px;
+  font-size: 18px;
+  color: #555;
+}
+.newuser-select {
+  height: 40px;
+  border-radius: 5px;
+}
+.newuser-Btn {
+  width: 200px;
+  height: 40px;
+  border: none;
+  background-color: darkblue;
+  color: white;
+  padding: 7px 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
