@@ -9,7 +9,7 @@ function Topbar() {
     <div className="topbar">
       <div className="topbar-wrapper">
         <div className="topleft">
-          <Link to="/">
+          <Link to="/admin_panel/">
             <span className="logo">Admin Dashboard</span>
           </Link>
         </div>

@@ -45,7 +45,7 @@ export default function UserList() {
       renderCell: (params) => {
         return (
           <>
-            <NavLink to={"/user/" + params.row.id}>
+            <NavLink to={"/admin_panel/user/" + params.row.id}>
               <button className="user-list-edit">Edit</button>
             </NavLink>
             <DeleteOutline

@@ -21,7 +21,7 @@ import Analytics from "./pages/analytics/Analytics";
 function App() {
   const location = window.location.pathname;
   const Alert = () => {
-    if (location !== "/login") {
+    if (location !== "/admin_panel/login") {
       return <Sidebar />;
     } else {
       return "";
@@ -30,19 +30,19 @@ function App() {
   return (
     <BrowserRouter>
       <Topbar />
-      <div className={location !== "/login" ? "container" : ""}>
+      <div className={location !== "/admin_panel/login" ? "container" : ""}>
         <Alert />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/users" element={<UserList />} />
-          <Route path="/user/:userId" element={<User />} />
-          <Route path="/newuser" element={<NewUser />} />
-          <Route path="/products" element={<ProductList />} />
-          <Route path="/product/:productId" element={<Product />} />
-          <Route path="/newproduct" element={<NewProduct />} />
-          <Route path="/sales" element={<Sales />} />
-          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/admin_panel/" exact element={<Home />} />
+          <Route path="/admin_panel/login" element={<Login />} />
+          <Route path="/admin_panel/users" element={<UserList />} />
+          <Route path="/admin_panel/user/:userId" element={<User />} />
+          <Route path="/admin_panel/newuser" element={<NewUser />} />
+          <Route path="/admin_panel/products" element={<ProductList />} />
+          <Route path="/admin_panel/product/:productId" element={<Product />} />
+          <Route path="/admin_panel/newproduct" element={<NewProduct />} />
+          <Route path="/admin_panel/sales" element={<Sales />} />
+          <Route path="/admin_panel/analytics" element={<Analytics />} />
         </Routes>
       </div>
     </BrowserRouter>

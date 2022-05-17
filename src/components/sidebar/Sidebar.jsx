@@ -23,19 +23,19 @@ export default function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Dashboard</h3>
           <ul className="sidebar-list">
-            <NavLink to="/" className="link">
+            <NavLink to="/admin_panel/" className="link">
               <li className="sidebar-list-item">
                 <LineStyle className="sidebar-icon" />
                 Home
               </li>
             </NavLink>
-            <NavLink to="/analytics" className="link">
+            <NavLink to="/admin_panel/analytics" className="link">
               <li className="sidebar-list-item">
                 <Timeline className="sidebar-icon" />
                 Analytics
               </li>
             </NavLink>
-            <NavLink to="/sales" className="link">
+            <NavLink to="/admin_panel/sales" className="link">
               <li className="sidebar-list-item">
                 <TrendingUp className="sidebar-icon" />
                 Sales
@@ -46,13 +46,13 @@ export default function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Quick Menu</h3>
           <ul className="sidebar-list">
-            <NavLink to="/users" className="link">
+            <NavLink to="/admin_panel/users" className="link">
               <li className="sidebar-list-item ">
                 <PermIdentity className="sidebar-icon" />
                 Users
               </li>
             </NavLink>
-            <NavLink to="/products" className="link">
+            <NavLink to="/admin_panel/products" className="link">
               <li className="sidebar-list-item">
                 <Storefront className="sidebar-icon" />
                 Products

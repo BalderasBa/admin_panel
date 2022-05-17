@@ -45,7 +45,7 @@ export default function ProductList() {
       renderCell: (params) => {
         return (
           <>
-            <Link to={"/product/" + params.row.id}>
+            <Link to={"/admin_panel/product/" + params.row.id}>
               <button className="product-list-edit">Edit</button>
             </Link>
             <DeleteOutline

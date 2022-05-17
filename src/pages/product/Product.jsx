@@ -8,11 +8,12 @@ export default function Product() {
   // const location = useLocation();
   const productId = window.location.pathname.split("/")[2];
   const product = productRows.find((product) => product.id === +productId);
+  console.log(productRows);
   return (
     <div className="product">
       <div className="product-title-container">
         <h1 className="product-title">Product</h1>
-        <Link to="/newproduct">
+        <Link to="/admin_panel/newproduct">
           <button className="product-add-btn">Create</button>
         </Link>
       </div>
